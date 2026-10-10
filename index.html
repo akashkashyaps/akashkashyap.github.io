@@ -1,49 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Akash Kashyap S</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="images/dsc_0133_modified_HM5_icon.ico">
+	<title>Akash Kashyap</title>
+	<meta name="description" content="Hi, I'm Akash. I build AI that works in the real world, and make things I find nice or useful.">
+	<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600&display=swap">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div id="particles-js">
-		<div class="main-content">	
-		<center>
-			<figure>
-				<img src="images/DSC_0133-modified.png" 
-				width="250" 
-    			height="260"
-				alt="Akash Kashyap">
-			</figure>
-			<h1>Akash Kashyap</h1>
-			<h2>Student , Freelancer</h2>
-			<h3>
-				Aspiring Business Analyst skilled in Excel, SQL and Data Visualisation
-				<br>
-				Content Creator, Freelance Photograher and Video Editor<br><br>
-				Bengaluru, Karnataka, India
-			</h3>
-			<ul class="social">
-								
-				<li><a href="https://www.youtube.com/channel/UCFHew6BXex2NsEy2aWMU2sA"><i class="icon-youtube"></i></a></li>
-				<li><a href="https://github.com/akashkashyaps" target="_blank"><i class="icon-github"></i></a></li>
-				<li><a href="https://twitter.com/UncoveredMyth" target="_blank"><i class="icon-twitter"></i></a></li>
-				<li><a href="mailto:akashkashyaps123@gmail.com" target="_blank"><i class="icon-envelope"></i></a></li>
-			</ul>
-		</center>	
+	<nav class="nav">
+		<a class="brand" href="#">Akash</a>
+		<div class="nav-links">
+			<a href="#work">Work</a>
+			<a href="#making">Making</a>
+			<a href="#made">Made</a>
+			<a href="#camera">Camera</a>
 		</div>
-		<footer id="footer">
-			&copy; 2021 Akash Kashyap S
-		</footer>
-	</div>	
-	<script src="js/particles.js"></script>
-	<script src="js/app.js"></script>
+		<a class="btn btn-dark btn-sm" href="mailto:akashkashyapshanthakumar@gmail.com">Say hi</a>
+	</nav>
+
+	<header class="hero">
+		<div class="hero-copy">
+			<img class="avatar-lg" src="images/akash.webp" alt="Akash Kashyap" width="96" height="96">
+			<h1>Hi, I'm Akash.<br>I build AI that works in the real world.</h1>
+			<p class="sub">I research it, ship it to production, and help people figure out what's worth building. The rest of the time I'm making things I find nice or useful.</p>
+			<div class="actions">
+				<a class="btn btn-dark" href="mailto:akashkashyapshanthakumar@gmail.com">Say hi</a>
+				<a class="btn btn-light" href="https://github.com/akashkashyaps">GitHub</a>
+				<a class="btn btn-light" href="https://www.youtube.com/@akashkashyapyt">YouTube</a>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="section" id="work">
+		<p class="eyebrow">For work</p>
+		<h2>I take AI from idea to production</h2>
+		<p class="lead">This is what I've done so far. I'm always learning and I enjoy trying new things, so this list keeps growing.</p>
+		<div class="grid-2">
+			<div class="card step">
+				<h3>Research</h3>
+				<p>Building and evaluating LLM systems: RAG and GraphRAG, knowledge graphs, AI agents and tool use, and multimodal pipelines with speech and avatars.</p>
+				<span class="tags"><span>LLM evaluation</span><span>RAG</span><span>Knowledge graphs</span><span>Agents</span><span>PyTorch</span><span>Hugging Face</span></span>
+			</div>
+			<div class="card step">
+				<h3>Production</h3>
+				<p>Deploying models as reliable services, monitoring them, and connecting them to the systems a business already runs on.</p>
+				<span class="tags"><span>Azure</span><span>Docker</span><span>FastAPI</span><span>Linux</span><span>Monitoring</span><span>Integrations</span></span>
+			</div>
+			<div class="card step">
+				<h3>Automation</h3>
+				<p>Automating workflows inside Microsoft 365 and outside it through APIs. Usually human-in-the-loop, so people stay in control of the decisions that matter.</p>
+				<span class="tags"><span>Power Automate</span><span>Excel macros</span><span>APIs</span><span>Human-in-the-loop</span></span>
+			</div>
+			<div class="card step">
+				<h3>Consulting</h3>
+				<p>Gathering requirements, explaining things in each audience's language, and working out where AI actually pays off.</p>
+				<span class="tags"><span>Requirements</span><span>ROI analysis</span><span>Bottleneck analysis</span><span>Process improvement</span></span>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="making">
+		<p class="eyebrow">What I'm making</p>
+		<h2>Side projects with big plans</h2>
+		<a class="card feature" href="https://play.google.com/store/apps/details?id=com.nowomp.app">
+			<div>
+				<h2>No Womp</h2>
+				<p>I wanted a gym app that doesn't let me off the hook. Miss a workout and you either burn a freeze token or make it up within 48 hours. Otherwise your streak goes back to zero.</p>
+				<span class="tags"><span>GPS-verified workouts</span><span>Streaks &amp; freeze tokens</span><span>100% offline</span></span>
+				<span class="btn btn-dark">Get it on Google Play</span>
+			</div>
+			<img class="feature-mark" src="images/nowomp.webp" alt="No Womp app icon: a penguin with flame eyes lifting dumbbells" width="180" height="180">
+		</a>
+		<div class="grid-2">
+			<div class="card lab">
+				<span class="status">Experimenting</span>
+				<h3>A multi-agent system that runs my YouTube channel</h3>
+				<p>Agents find topics worth a video, edit my footage through Claude Code with an open-source video editor and motion graphics framework, and use vidIQ to write titles and schedule uploads based on stats. It's human-in-the-loop: I shoot my opinions and review the edit before anything goes public.</p>
+				<ol class="flow"><li><span>Research</span></li><li class="me"><span>I shoot</span></li><li><span>Edit</span></li><li class="me"><span>I review</span></li><li><span>Schedule</span></li></ol>
+			</div>
+			<div class="card lab">
+				<span class="status">Experimenting</span>
+				<h3>A Minecraft mod that teaches English</h3>
+				<p>A mod for kids in low-resource settings learning English as a second language. I'm building it with teachers, for classrooms as they are today, not as I assume they are.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section" id="made">
+		<p class="eyebrow">What I've made</p>
+		<h2>A few things on GitHub</h2>
+		<div class="grid-3">
+			<a class="card project" href="https://github.com/akashkashyaps/Lexi">
+				<h3>Lexi</h3>
+				<p class="what">Helps school students get better at writing in English by chatting with a friendly AI tutor that corrects one mistake at a time.</p>
+				<p>12 structured activities on Groq-hosted LLMs, with a shared pool of API keys that balances load and stays under daily rate limits. Served with Gunicorn.</p>
+				<span class="tags"><span>Python</span><span>Groq</span><span>LLMs</span><span>Gunicorn</span></span>
+			</a>
+			<a class="card project" href="https://github.com/akashkashyaps/ROBIN-RAG">
+				<h3>ROBIN</h3>
+				<p class="what">A digital human you can talk to out loud. It listens, answers from its own knowledge base, and speaks back with a lip-synced face.</p>
+				<p>RAG on local Ollama models and Edge TTS, each served as a FastAPI endpoint, with speech recognition and NVIDIA Audio2Face animating a MetaHuman in Unreal Engine.</p>
+				<span class="tags"><span>RAG</span><span>FastAPI</span><span>Ollama</span><span>Audio2Face</span><span>Unreal</span></span>
+			</a>
+			<a class="card project" href="https://github.com/akashkashyaps/HistoriChat">
+				<h3>HistoriChat</h3>
+				<p class="what">A chatbot that answers questions about history. I tested whether it answers better when retrieval understands <em>when</em> things happened, not just what happened.</p>
+				<p>Standard RAG compared with time-aware RAG on 916 synthetic Q&amp;A pairs made with RAGAS, plus a GraphRAG version on Neo4j. Runs locally with Ollama and Docker.</p>
+				<span class="tags"><span>RAG</span><span>GraphRAG</span><span>Neo4j</span><span>RAGAS</span><span>Docker</span></span>
+			</a>
+		</div>
+		<a class="card paper" href="https://doi.org/10.1007/978-3-031-78857-4_3">
+			<span class="badge-tag">Paper</span>
+			<span class="paper-title">Retrieval Augmented LLM Chatbots in Higher Education</span>
+			<span class="muted">UKCI 2024 · Springer →</span>
+		</a>
+	</section>
+
+	<section class="section" id="camera">
+		<p class="eyebrow">Off the clock</p>
+		<h2>Behind the camera</h2>
+		<p class="lead">I shoot photos and videos, and edit and colour grade them myself. Mostly travel, plus whatever I find nice or useful at the time.</p>
+		<div class="photos">
+			<img class="wide" src="images/photos/aurora.webp" alt="Green aurora over a dark night sky" loading="lazy">
+			<img src="images/photos/sunset.webp" alt="Sun setting behind a hillside as two birds fly past" loading="lazy">
+			<img src="images/photos/moon.webp" alt="A red-orange moon in a black sky" loading="lazy">
+			<img src="images/photos/sea.webp" alt="Two seabirds on dark rocks above churning turquoise water" loading="lazy">
+			<img src="images/photos/rainbow.webp" alt="A rainbow dropping into a dark blue sea" loading="lazy">
+		</div>
+		<h3 class="sub-h">Videos</h3>
+		<div class="grid-3 videos">
+			<a class="video" href="https://www.youtube.com/watch?v=xPrOyIg0g7A"><span class="thumb"><img src="https://i.ytimg.com/vi/xPrOyIg0g7A/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'"></span><span>Mullayanagiri vlog · Chikmagalur, India</span></a>
+			<a class="video" href="https://www.youtube.com/watch?v=42U9RG8rGkU"><span class="thumb"><img src="https://i.ytimg.com/vi/42U9RG8rGkU/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'"></span><span>Edinburgh vlog · Scotland</span></a>
+			<a class="video" href="https://www.youtube.com/watch?v=5QZvih4koG4"><span class="thumb"><img src="https://i.ytimg.com/vi/5QZvih4koG4/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.visibility='hidden'"></span><span>Ooty vlog · Tamil Nadu, India</span></a>
+		</div>
+		<a class="btn btn-light" href="https://www.youtube.com/@akashkashyapyt">More on YouTube →</a>
+	</section>
+
+	<section class="section">
+		<div class="cta">
+			<img class="avatar-lg" src="images/akash.webp" alt="" width="72" height="72">
+			<h2>Let's talk</h2>
+			<p>Building something serious, or just want to chat about any of this? My inbox is open.</p>
+			<a class="btn btn-white" href="mailto:akashkashyapshanthakumar@gmail.com">Say hi</a>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<span>© 2026 Akash Kashyap</span>
+		<div>
+			<a href="mailto:akashkashyapshanthakumar@gmail.com">Email</a>
+			<a href="https://github.com/akashkashyaps">GitHub</a>
+			<a href="https://linkedin.com/in/akashkashyaps">LinkedIn</a>
+			<a href="https://www.youtube.com/@akashkashyapyt">YouTube</a>
+		</div>
+	</footer>
 </body>
 </html>
